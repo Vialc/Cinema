@@ -15,6 +15,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Voltando a Programar\MeuCinema(MVC)\MeuCinema
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Voltando a Programar/MeuCinema(MVC)/MeuCinema/Views/Filmes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Voltando a Programar/MeuCinema(MVC)/MeuCinema/Views/Filmes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Voltando a Programar/MeuCinema(MVC)/MeuCinema/Views/Filmes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Voltando a Programar/MeuCinema(MVC)/MeuCinema/Views/Filmes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Voltando a Programar/MeuCinema(MVC)/MeuCinema/Views/Filmes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Voltando a Programar/MeuCinema(MVC)/MeuCinema/Views/FilmList/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUxpc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

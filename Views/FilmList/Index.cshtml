@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<MeuCinema.Models.FilmesModel>
+@{
     ViewData["Title"] = "Filmes em Cartaz";
 }
 
@@ -16,33 +17,24 @@
   </head>
   <body>
     <h1>Filmes em Cartaz:</h1>
-    <div class="card-group">
-  <div class="card">
-    <img class="card-img-top" width="40" height="450" src="https://www.arcoplex.com.br/arquivos/arquivos_cinema/cartazes_filmes/f28547.png" style="block-size">
-    <div class="card-body">
-      <h5 class="card-title">King's man: A Origem</h5>
-      <p class="card-text">Um homem precisa correr contra o tempo para impedir que os piores tiranos e criminosos da história exterminem milhões de pessoas e destruam a humanidade.</p>
-      <a class="btn btn-primary btn-block" asp-controller="FilmList" asp-action="Sections" role="button">Ver Horários</a>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" width="40" height="450" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeoFKAlVEDJr4gWmlGzlK7k_fHAZ6J5riMiudyPt_rTk9YTpuO" style="block-size">
-    <div class="card-body">
-      <h5 class="card-title">Homem Aranha - Sem Volta pra Casa</h5>
-      <p class="card-text">O Homem-Aranha precisa lidar com as consequências da sua verdadeira identidade ter sido descoberta.</p>
-       <a class="btn btn-primary btn-block" asp-controller="FilmList" asp-action="Sections" role="button">Ver Horários</a>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" width="40" height="450" src="https://ingresso-a.akamaihd.net/prd/img/movie/matrix-resurrections/2f864be6-116a-4b63-9465-9a8e08a44abd.jpg" style="block-size">
-    <div class="card-body">
-      <h5 class="card-title">Pior Matrix de Todos</h5>
-      <p class="card-text">Esse filme foi uma total decepção, não assistam isso!</p>
-       <a class="btn btn-primary btn-block" asp-controller="FilmList" asp-action="Sections" role="button">Ver Horários</a>
-       
-    </div>
-  </div> 
-</div>
+    @if (Model != null && Model.Any())
+    {
+        <div class="card-columns">
+        @foreach (var filmes in Model)
+        {
+            
+                <div class="card">
+                <img class="card-img-top" width="40" height="450" src="@Html.DisplayFor(modelItem => filmes.Imagem)">
+                     <div class="card-body">
+                     <h5 class="card-title">@Html.DisplayFor(modelItem => filmes.Name)</h5>
+                     <p class="card-text">@Html.DisplayFor(modelItem => filmes.Sinopse)</p>
+                     <a class="btn btn-primary btn-block" asp-controller="FilmList" asp-action="Sections" role="button">Ver Horários</a>
+                     </div>
+                </div> 
+        }
+        </div>
+    }
+    
 <div class="card-body">
     <a class="btn btn-secondary" asp-controller="Home" asp-action="Index" role="button">Voltar</a>
 </div>
